@@ -17,9 +17,9 @@ function binaryToString(binaryBlob) {
 
   strList.forEach(element => {
     let int = parseInt(element, 2);
-    str += String.fromCharCode(int);
+    str += String.fromCharCode(int)
   });
-  return str;
+  return str.slice(0, str.length - 1)
 }
 
 /* Comment in the code below to run local tests */
